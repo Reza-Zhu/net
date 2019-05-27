@@ -9,7 +9,7 @@ def send():
     s.listen(5)
     c, addr = s.accept()
     print('连接地址：', addr)
-    o='连接建立'
+    o='****连接建立成功****'
     c.send(o.encode('utf-8'))
     while True:
         t = input('请输入要发送的消息:\n ')

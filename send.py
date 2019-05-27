@@ -23,6 +23,8 @@ def get():
         while True:
             print(a.recv(1024).decode('utf-8'))
     except:print("错误：请求连接超时......请在10s内打开get.py程序建立连接")
+
+
 def main():
     t1=threading.Thread(target=send)
     t2=threading.Thread(target=get)
